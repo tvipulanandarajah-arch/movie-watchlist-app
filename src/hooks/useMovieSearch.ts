@@ -1,3 +1,4 @@
+// Custom hook to manage movie search logic, including loading state, error handling, and search results
 import { useState } from "react";
 import type { Movie } from "../types/movie";
 import { searchMovies as searchMoviesApi } from "../services/movieService";
