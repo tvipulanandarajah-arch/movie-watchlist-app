@@ -1,3 +1,4 @@
+// Custom hook to manage the user's movie watchlist, including adding/removing movies, rating, and tracking watched status, all persisted in localStorage
 import type { Movie } from "../types/movie";
 import { useLocalStorage } from "./useLocalStorage";
 import { STORAGE_KEY } from "../constants/appConfig";

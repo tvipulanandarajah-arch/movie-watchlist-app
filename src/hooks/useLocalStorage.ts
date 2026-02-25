@@ -1,3 +1,5 @@
+// Custom hook to manage localStorage state, providing a simple interface for getting and setting values while ensuring synchronization with localStorage
+
 import { useState, useEffect } from "react";
 
 export function useLocalStorage<T>(
