@@ -1,3 +1,4 @@
+// Custom hook to manage movie filtering logic based on watch status
 import { useState, useMemo } from "react";
 import type { Movie } from "../types/movie";
 import { type FilterType, FILTER_OPTIONS } from "../constants/appConfig";
