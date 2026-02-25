@@ -1,3 +1,4 @@
+// Button component with support for different variants, sizes, and disabled state, using Tailwind CSS for styling
 import React from "react";
 
 interface ButtonProps {
