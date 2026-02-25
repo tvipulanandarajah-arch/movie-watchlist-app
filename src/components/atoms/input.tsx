@@ -1,3 +1,4 @@
+// Input component for user input, supporting various types, disabled state, and full width option, styled with Tailwind CSS
 import React from "react";
 
 interface InputProps {
