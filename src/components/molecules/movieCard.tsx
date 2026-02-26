@@ -94,18 +94,20 @@ const MovieCard: React.FC<MovieCardProps> = ({
         <h3 className="font-bold text-lg text-gray-800 truncate mb-1">
           {movie.title}
         </h3>
-        <p className="text-gray-500 text-sm mb-3">{movie.year}</p>
-        <span
-          className={`inline-block text-xs px-2 py-0.5 rounded-full capitalize mb-3 text-center ${
-            movie.type === "series"
-              ? "bg-purple-100 text-purple-800"
-              : movie.type === "movie"
-              ? "bg-blue-100 text-blue-800"
-              : "bg-gray-100 text-gray-800"
-          }`}
-        >
-          {movie.type}
-        </span>
+        <div className="flex items-center justify-between mb-3">
+          <p className="text-gray-500 text-sm">{movie.year}</p>
+          <span
+            className={`inline-block text-xs px-2 py-0.5 rounded-lg capitalize ${
+              movie.type === "series"
+                ? "bg-purple-100 text-purple-800"
+                : movie.type === "movie"
+                ? "bg-blue-100 text-blue-800"
+                : "bg-gray-100 text-gray-800"
+            }`}
+          >
+            {movie.type}
+          </span>
+        </div>
 
         {/* Action Buttons */}
         <div className="mt-auto flex flex-col gap-2">
@@ -139,7 +141,7 @@ const MovieCard: React.FC<MovieCardProps> = ({
               </>
             ) : (
               // Search Page - Just show "Added to Watchlist" badge
-              <div className="bg-green-100 text-green-800 text-center py-2 px-4 rounded-lg font-medium text-sm">
+              <div className="bg-green-100 text-green-800 text-center py-1.5 px-3 rounded-lg font-medium text-sm">
                 Added to Watchlist
               </div>
             )
